@@ -3,11 +3,20 @@ package practice3;
 import java.util.HashMap;
 import java.util.Map;
 
+
+// https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+// https://leetcode.com/problems/range-sum-query-immutable/
+
 public class LongestSubArraySum {
 	public static void main(String[] args) {
 		int[] arr = {10,5,2,7,1,9};
 		int n = arr.length, target = 15;
 		sum4(arr, n, target);
+		
+		
+		
+		
 	}
 	// -1 -1 1
 	//  0  1 2
@@ -16,8 +25,8 @@ public class LongestSubArraySum {
 	//  s = -2
 	
 	public static void sum4(int[] arr, int n, int t) {
-		
-		// Link: [https://www.code-recipe.com/post/subarray-sum-equals-k]
+
+		// Link: [https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1]
 		// map = 0,1  10,0  15,1  17,2  24,3  25,4  26,5   35,6 
 		// arr = 10, 5, 2, 7, 1, 9
 		// pref= 10, 15, 17, 24, 25, 26, 35
@@ -92,14 +101,14 @@ public class LongestSubArraySum {
 	
 	public static void sum2(int[] arr, int n, int t) {
 		Map<Integer, Integer> map = new HashMap<>();
+		
 		// 10, 5, 2, 7, 1, 9
 		//  0  1  2  3  4  5
-		//  i 
-		// sum = 35, len = 4, t = 15
-		// rem = 20
+		//              i 
+		// sum = 25, len = 4, t = 15
+		// rem = 10
 		// x = i-map.get(rem) -> 3 - 0
-		// map = [(10,0), (15, 1), (17, 2), (25, 3), (26, 4), (35, 5)]
-		
+		// map = [(10,0), (15, 1), (17, 2), (24, 3), (25, 4), (34, 5)*]
 		
 		
 		int sum = 0, len = 0;
@@ -113,7 +122,11 @@ public class LongestSubArraySum {
 			int rem = sum - t;
 			
 			if (map.containsKey(rem)) {
-				int x = i - map.get(rem);
+				int x = i - map.get(rem); 
+				// x: 💡 at i=4, curren sum = 25 & rem = 10, 
+				// Since rem(10) exists in our map, It means
+				// Sub-array between those indices has sum == target
+				
 				//len = Math.max(x, len);
 				len += x;
 			}

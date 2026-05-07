@@ -279,7 +279,7 @@ ________________________________________________________________________________
 
 👉 Transitive:
 	- If f(n) is O(g(n)) & g(n) is O(h(n)), Then f(n) is O(h(n))
-	- [When g(n) is an upper-bound for f(n) & h(n) is an upper-bound for f(n), Then h(n) is an upper-bound for g(n)]
+	- [When g(n) is an upper-bound for f(n) & h(n) is an upper-bound for g(n), Then h(n) is an upper-bound for f(n)]
 	
 	- Ex. f(n) = n     &        g(n) = n^2     &       h(n) = n^3
 		- n is O(n^2) & n^2 is O(n^3)

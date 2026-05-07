@@ -2,6 +2,9 @@ package practice3;
 
 import java.util.Arrays;
 
+
+// https://leetcode.com/problems/move-zeroes/description/
+
 public class moveZeroesToEnd {
 	public static void main(String[] args) {
 		int[] arr = {10,0,3,4,0,1,0,2,0};

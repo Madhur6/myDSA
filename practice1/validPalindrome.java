@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 
 import java.util.Scanner;
 
@@ -31,14 +31,14 @@ public class validPalindrome {
 				l++;
 			}
 			
-			while (r >= 0 && !Character.isLetterOrDigit(str.charAt(r))) {
+			while (r > 0 && !Character.isLetterOrDigit(str.charAt(r))) {
 				r--;
 			}
 			
 			Character c1 = Character.toLowerCase(str.charAt(l));
 			Character c2 = Character.toLowerCase(str.charAt(r));
 			
-			if (c1 != c2) {
+			if (l < r && c1 != c2) {
 				return false;
 			}
 			l+=1;
@@ -46,6 +46,8 @@ public class validPalindrome {
 		}
 		return true;
 	}
+	
+	
 	
 	public static boolean check2(String str) {
 		String s = trimm(str);
@@ -78,6 +80,7 @@ public class validPalindrome {
 	}
 	
 	
+	// Miscellaneous
 	public static String trimm(String s) {
 		StringBuilder sb = new StringBuilder();
 		

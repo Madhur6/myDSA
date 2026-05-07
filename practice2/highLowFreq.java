@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+
+// https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382
+
 public class highLowFreq {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -81,12 +84,12 @@ public class highLowFreq {
 			int count = entry.getValue();
 			int element = entry.getKey();
 			
-			if (count > max) {
+			if (count > max || (count == max && element < maxElement)) {
 				max = count;
 				maxElement = element;
 			}
 			
-			if (count < min) {
+			if (count < min || (count == min && element < minElement)) {
 				min = count;
 				minElement = element;
 			}
@@ -98,10 +101,42 @@ public class highLowFreq {
 }
 
 
-
-
-
-
-
-
-
+//
+//
+//int n = v.length;
+//int[] res = new int[2];
+//
+//HashMap<Integer, Integer> myMap = new HashMap<>();
+//
+//for (int i = 0; i < n; i++){
+//    if (!myMap.containsKey(v[i])){
+//        myMap.put(v[i], 0);
+//    }myMap.put(v[i], myMap.get(v[i])+1);
+//}
+//
+//// System.out.println(myMap);
+//
+//int max = 0, min = Integer.MAX_VALUE, maxKey = 0, minKey = Integer.MAX_VALUE;
+//for (Map.Entry<Integer, Integer> entry: myMap.entrySet()){
+//    if (max < entry.getValue() || (entry.getValue() == max && entry.getKey() < maxKey)){
+//        max = entry.getValue();
+//        maxKey = entry.getKey();
+//    }
+//    if (entry.getValue() < min || (entry.getValue() == min && entry.getKey() < minKey)){
+//        // System.out.println(entry.getValue() + " * " + entry.getKey());
+//        min = entry.getValue();
+//        minKey = entry.getKey();
+//    }
+//}
+//
+//// System.out.println(maxKey + " | " + minKey);
+//res[0] = maxKey;
+//res[1] = minKey;
+//
+//return res;
+//
+//
+//
+//
+//
+//

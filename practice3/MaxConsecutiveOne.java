@@ -1,6 +1,7 @@
 package practice3;
 
 
+// https://leetcode.com/problems/max-consecutive-ones/
 
 public class MaxConsecutiveOne {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package practice;
+package practice1;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,6 +23,7 @@ public class printAllDivisors {
 	public static List<Integer> printAllDivs(int n) {
 		
 		// SortedSet<Integer> mySet = new TreeSet<>();
+		// String res = mySet.stream().map(String::valueOf).collect(Collectors.joining(" ");
 		
 		List<Integer> res = new ArrayList<>();
 //		for (int i = 1; i <= Math.sqrt(n); i++) {

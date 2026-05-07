@@ -1,7 +1,12 @@
 package practice2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Scanner;
+
+
 
 public class elementFreq {
 	public static void main(String[] args) {
@@ -20,7 +25,34 @@ public class elementFreq {
 		
 		
 		countFrequency2(arr);
+		
+		
+		System.out.println(countFrequency3(arr));
 	}
+	
+	
+	// https://www.geeksforgeeks.org/problems/frequency-count/1
+	// Given an integer array arr[], you need to find frequency of each element and return in an arraylist in the order they appear.
+	public static ArrayList<Integer> countFrequency3(int[] arr) {
+		
+		int len = arr.length;
+		ArrayList<Integer> myList = new ArrayList<>();
+		Map<Integer, Integer> myMap = new LinkedHashMap<>();
+		
+		for (int i = 0; i < len; i++) {
+			if (!myMap.containsKey(arr[i])) {
+				myMap.put(arr[i], 0);
+			} myMap.put(arr[i], myMap.get(arr[i])+1);
+		}
+		
+		for (Map.Entry<Integer, Integer> entry: myMap.entrySet()) {
+			myList.add(entry.getValue());
+		}
+		
+		return myList;
+	}
+	
+	
 	
 	public static void countFrequency2(int[] arr) {
 		int len = arr.length;
@@ -37,6 +69,7 @@ public class elementFreq {
 		System.out.println("My Map: " + hashMap);
 		
 	}
+
 	
 	public static void countFrequency(int[] arr) {
 		int len = arr.length;

@@ -26,9 +26,10 @@ public class hashing {
 		System.out.println("HashMap: " + Arrays.toString(hashmap));
 		
 		
+		System.out.print("Enter m: ");
 		int q = sc.nextInt();
 		while (q-- > 0) {
-			System.out.print("Enter x: ");
+			System.out.print("Enter number to query into hashMap: ");
 			int number = sc.nextInt();
 			
 			System.out.println("Data: " + hashmap[number]);

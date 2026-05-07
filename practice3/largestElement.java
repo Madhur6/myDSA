@@ -2,6 +2,9 @@ package practice3;
 
 import java.util.Arrays;
 
+
+// https://www.geeksforgeeks.org/problems/largest-element-in-array4009/1
+
 public class largestElement {
 	public static void main(String[] args) {
 		int[] arr = {10,-2, 786, 0, 4, 3, 123, 78786, 9};
@@ -14,13 +17,20 @@ public class largestElement {
 		find3(arr, len);
 	}
 	
+	
+	public static int find4(int[] arr) {
+		return Arrays.stream(arr).max().orElse(-1);
+	}
+	
+	
 	public static void find3(int[] arr, int n) {
 		Arrays.sort(arr);
 		System.out.println("Result: " + arr[n-1]);
 	}
 	
+	
 	public static int findR(int[] arr, int n, int max) {
-		if (n == 0) return max;
+		if (n < 0) return max;
 		
 		if (arr[n] > max) {
 			max = arr[n];

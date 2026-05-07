@@ -1,5 +1,9 @@
 package practice3;
 
+import java.util.Arrays;
+
+// https://leetcode.com/problems/missing-number/
+
 public class missingNumber {
 	public static void main(String[] args) {
 		int[] arr = {3,0,1};
@@ -13,6 +17,7 @@ public class missingNumber {
 			s += arr[i];
 		}
 		System.out.println((n*(n+1)/2) - s);
+
 	}
 	public static void find(int[] arr) {
 		int n = arr.length, s = 0, s1 = 0;
