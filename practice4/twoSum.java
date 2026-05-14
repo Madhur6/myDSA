@@ -4,18 +4,26 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
+//https://leetcode.com/problems/two-sum/submissions/1927515466/
+
+
 public class twoSum {
 	
 	static class Pair implements Comparable<Pair>{
 		public int idx;
 		public int val;
 		
+		// time complexity : O(n)💖
+		// space complexity: O(1)✨
 		public Pair(int idx, int val) {
 			this.val = val;
 			this.idx = idx;
 		}
 		
 		@Override
+		// time complexity : O(1)💖
+		// space complexity: O(1)✨
 		public int compareTo(Pair other) {
 			return Integer.compare(this.val, other.val);
 		}
@@ -29,6 +37,8 @@ public class twoSum {
 		System.out.println("The resultant array is: " + Arrays.toString(res));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int[] find(int[] arr, int n, int target) {
 		List<Integer> lit = new ArrayList<>();
 		Pair[] pairs = new Pair[n];

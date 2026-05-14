@@ -3,6 +3,8 @@ package practice3;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// https://leetcode.com/problems/rotate-array/description/
+
 public class rotateArray {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,6 +18,8 @@ public class rotateArray {
 		System.out.println(Arrays.toString(arr));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void rotate(int[] arr, int x) {
 		// [1,2,3,4,5] -1 rotation-> [5,1,2,3,4]
 		

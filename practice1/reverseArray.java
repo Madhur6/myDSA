@@ -43,6 +43,8 @@ public class reverseArray {
 		
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void reverseArr3(int[] arr, int start, int end) {
 		if (start < end) {
 			int temp = arr[start];
@@ -52,6 +54,8 @@ public class reverseArray {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void reverseArr2(int[] arr) {
 //		int n = arr.length-1;
 //		int l = 0, r = n;
@@ -66,6 +70,8 @@ public class reverseArray {
 //		myarr.reversed();
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int[] reverseArr(int[] arr) {
 		int[] newArr = new int[arr.length];
 		

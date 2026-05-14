@@ -10,6 +10,8 @@ public class armstrongNum {
 		System.out.println("The result is: " + res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean find(int x) {
 		int s = 0, o = x;
 		while (x > 0) {

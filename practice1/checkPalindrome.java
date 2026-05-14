@@ -24,6 +24,8 @@ public class checkPalindrome {
 		System.out.println("The res: " + res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean check3(int x) {
 		if (x < 0) return false;
 		
@@ -39,6 +41,8 @@ public class checkPalindrome {
 		return true;	
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static boolean check2(int x) {
 		if (x < 0) {
 			return false;
@@ -52,6 +56,8 @@ public class checkPalindrome {
 		return original == rev;
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean check1(int x) {
 		if (x < 0) {
 			return false;

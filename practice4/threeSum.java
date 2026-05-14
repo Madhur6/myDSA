@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// https://leetcode.com/problems/3sum/description/
+
 public class threeSum {
 	public static void main(String[] args) {
 		int[] arr = {-1, 0, 1, 2, -1, -4};
@@ -12,6 +14,8 @@ public class threeSum {
 		System.out.println(res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static List<List<Integer>> find(int[] nums, int n){
 		// -1, 0, 1, 2, -1, -4
 		//  

@@ -20,6 +20,8 @@ public class printAllDivisors {
 		for (int x: res) {System.out.print(x + " ");}
 	}
 	
+	// time complexity : O(sqrt(n) * log k)💖
+	// space complexity: O(k)✨
 	public static List<Integer> printAllDivs(int n) {
 		
 		// SortedSet<Integer> mySet = new TreeSet<>();

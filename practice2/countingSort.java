@@ -15,6 +15,8 @@ public class countingSort {
 	
 	
 	// 💡 General Counting Sort
+	// time complexity : O(n + k)💖
+	// space complexity: O(k)✨
 	public static int[] sort3(int[] nums) {
 		int n = nums.length, max = Arrays.stream(nums).max().orElse(-1), min = Arrays.stream(nums).min().orElse(-1);
 
@@ -55,6 +57,8 @@ public class countingSort {
 	// ✨ Stable Counting Sort
 	
 	// Works for both (-ve & +ve)
+	// time complexity : O(n + k)💖
+	// space complexity: O(k)✨
 	public static void sort2(int[] arr) {
 		int len = arr.length;
 		int[] output = new int[len];
@@ -87,6 +91,8 @@ public class countingSort {
 	
 	
 	// Only for non-negatives...
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr) {
 		int len = arr.length;
 		int[] output = new int[len];

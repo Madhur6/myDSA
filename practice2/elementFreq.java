@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 
-
 public class elementFreq {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -33,6 +32,8 @@ public class elementFreq {
 	
 	// https://www.geeksforgeeks.org/problems/frequency-count/1
 	// Given an integer array arr[], you need to find frequency of each element and return in an arraylist in the order they appear.
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static ArrayList<Integer> countFrequency3(int[] arr) {
 		
 		int len = arr.length;
@@ -54,6 +55,8 @@ public class elementFreq {
 	
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void countFrequency2(int[] arr) {
 		int len = arr.length;
 		
@@ -71,6 +74,8 @@ public class elementFreq {
 	}
 
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void countFrequency(int[] arr) {
 		int len = arr.length;
 		

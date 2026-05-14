@@ -19,6 +19,8 @@ public class rInsertionSort {
 		System.out.println("Array: " + Arrays.toString(arr));
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(n)✨
 	public static void rSort(int[] arr, int n) {
 		if (n == 0)return;
 		
@@ -34,6 +36,8 @@ public class rInsertionSort {
 		arr[j+1] = key;
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr) {
 		int len = arr.length;
 		

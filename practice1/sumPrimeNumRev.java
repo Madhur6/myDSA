@@ -14,6 +14,8 @@ public class sumPrimeNumRev {
 		System.out.println("The sum of primes between num & it's rev : " + res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int solution(int x) {
 		int rev = rev(x), s = 0, p = Math.min(x, rev), q = Math.max(rev, x);
 		
@@ -38,6 +40,8 @@ public class sumPrimeNumRev {
 		return s;
 	}
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(1)✨
 	public static int rev(int x) {
 		int rev = 0;
 		while (x > 0) {

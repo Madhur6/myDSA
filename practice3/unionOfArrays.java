@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+
+// https://www.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+
 public class unionOfArrays {
 	public static void main(String[] args) {
 		int[] a = {1,2,3,4,5};
@@ -15,6 +18,8 @@ public class unionOfArrays {
 	}
 	
 	// array must be sorted
+    // time complexity : O(n + m)💖
+    // space complexity: O(n + m)✨
     public static ArrayList<Integer> union2(int[] a, int[] b) {
         ArrayList<Integer> arr = new ArrayList<>();
 
@@ -53,6 +58,8 @@ public class unionOfArrays {
         return arr;
     }
 	
+    // time complexity : O(n + m)💖
+    // space complexity: O(1)✨
     public static ArrayList<Integer> union(int[] a, int[] b) {
         ArrayList<Integer> arr = new ArrayList<>();
         

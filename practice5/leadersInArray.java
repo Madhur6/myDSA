@@ -11,6 +11,8 @@ public class leadersInArray {
 		System.out.println(list);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static ArrayList<Integer> find(int[] arr) {
 		int n = arr.length, max = Integer.MIN_VALUE;
 		ArrayList<Integer> list = new ArrayList<>();

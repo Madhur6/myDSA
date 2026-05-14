@@ -22,6 +22,8 @@ public class sumOfN {
 		System.out.println("Result is: " + doSum3(n, 0));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int doSum(int n) {
 		int res = 0;
 		for (int i = 1; i <= n; i++) {
@@ -31,6 +33,8 @@ public class sumOfN {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int doSum2(int n, int sum) {
 		if (n < 1) {
 			return sum;
@@ -39,6 +43,8 @@ public class sumOfN {
 		return doSum2(n-1, sum+n);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int doSum3(int n, int sum) {
 		
 		// Iterative approach

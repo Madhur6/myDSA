@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/single-number/description/
+
 public class singleNumber {
 	public static void main(String[] args) {
 		int[] arr = {2,3,2,3,10,1,1,7,10,4,0,4,0};
@@ -11,6 +13,8 @@ public class singleNumber {
 		find4(arr);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find4(int[] arr) {
 		// XOR
 		// a ^ b = a'b + b'a
@@ -26,6 +30,8 @@ public class singleNumber {
 		System.out.println(xor);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find3(int[] arr) {
 		int n = arr.length;
 		
@@ -53,6 +59,8 @@ public class singleNumber {
 		
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find2(int[] arr) {
 		int n = arr.length;
 		
@@ -76,6 +84,8 @@ public class singleNumber {
 		System.out.println(c);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int find(int[] arr) {
 		int n = arr.length;
 		int res = -1;

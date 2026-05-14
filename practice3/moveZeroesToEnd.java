@@ -13,6 +13,8 @@ public class moveZeroesToEnd {
 		System.out.println(Arrays.toString(arr));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void move2(int[] arr, int n) {
 		int x = -1;
 		for (int i = 0; i < n; i++) {
@@ -41,6 +43,8 @@ public class moveZeroesToEnd {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void move(int[] arr, int n) {
 		int x = 0;
 		for (int i = 0; i < n; i++) {

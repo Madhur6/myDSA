@@ -27,6 +27,8 @@ public class highLowFreq {
 		countFrequency2(arr);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void countFrequency2(int[] arr) {
 		int len = arr.length;
 		
@@ -63,6 +65,8 @@ public class highLowFreq {
 		System.out.println("Minimum frequency: " + min + "(" + minElement + ")");
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void countFrequency(int[] arr) {
 		int len = arr.length;
 		

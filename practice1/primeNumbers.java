@@ -15,6 +15,8 @@ public class primeNumbers {
 		System.out.println("The " + x + " is prime: " + res);
 	}
 	
+	// time complexity : O(sqrt(n))💖
+	// space complexity: O(1)✨
 	public static boolean checkPrime(int x) {
 		if (x < 2) return false;
 		

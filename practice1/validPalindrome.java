@@ -23,6 +23,8 @@ public class validPalindrome {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean check3(String str) {
 		int l = 0, r = str.length()-1;
 
@@ -49,6 +51,8 @@ public class validPalindrome {
 	
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static boolean check2(String str) {
 		String s = trimm(str);
 		
@@ -70,6 +74,8 @@ public class validPalindrome {
 	}
 
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean check(String s) {
 		StringBuilder sb = new StringBuilder(s).reverse();
 		
@@ -81,6 +87,8 @@ public class validPalindrome {
 	
 	
 	// Miscellaneous
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static String trimm(String s) {
 		StringBuilder sb = new StringBuilder();
 		

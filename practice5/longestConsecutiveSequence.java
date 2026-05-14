@@ -10,6 +10,8 @@ public class longestConsecutiveSequence {
 		find(arr);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr) {
 		int n = arr.length, length = 1, max = Integer.MIN_VALUE;
 		Arrays.sort(arr);

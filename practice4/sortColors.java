@@ -2,6 +2,8 @@ package practice4;
 
 import java.util.Arrays;
 
+// https://leetcode.com/problems/sort-colors/description/
+
 public class sortColors {
 	public static void main(String[] args) {
 		int[] arr = {2,0,2,1,1,0};
@@ -9,6 +11,8 @@ public class sortColors {
 		find(arr, n);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr, int n) {
 		// [0, 0, 1, 1, 2, 2]
 		//  l              h

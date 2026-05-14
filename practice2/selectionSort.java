@@ -41,6 +41,8 @@ public class selectionSort {
 	
 	}
 	
+	// time complexity : O(n + k)💖
+	// space complexity: O(k)✨
 	public static void sort2(int[] arr) {
 		int len = arr.length;
 		for (int i = 0; i <len; i++) {
@@ -57,6 +59,8 @@ public class selectionSort {
 		}
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr) {
 		int len = arr.length;
 		

@@ -14,6 +14,8 @@ public class MaxConsecutiveOne {
 		
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int find(int[] arr, int n) {
 		int c = 0, max = 0;
 		for (int i = 0; i < n; i++) {

@@ -35,6 +35,8 @@ public class insertionSort {
 		// Space-comp: O(1) [in-place sorting]
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr) {
 		int len = arr.length;
 		

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
+// https://leetcode.com/problems/4sum/description/
+
 public class fourSum {
 	public static void main(String[] args) {
 		int[] arr = {1000000000,1000000000,1000000000,1000000000};
@@ -11,6 +14,62 @@ public class fourSum {
 		find(arr, n, target);
 	}
 	
+	
+	// Recurssive Approach✨
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
+	public static List<List<Integer>> find2(int[] arr, int n, int target) {
+		Arrays.sort(arr);
+		List<List<Integer>> res = new ArrayList<>();
+		List<Integer> quad = new ArrayList<>();
+		
+		kSum(4, 0, (long)target, arr, res, quad);
+		
+		return res;
+	}
+	
+	// time complexity : O(n^(k-1))💖
+	// space complexity: O(k)✨
+	public static void kSum(int k, int start, long target, int[] arr, List<List<Integer>> res, List<Integer> quad) {
+		if (k != 2) {
+			for (int i = start; i <= arr.length-k; i++) {
+				if (i > start && arr[i] == arr[i-1]) {
+					continue;
+				}
+				quad.add(arr[i]);
+				kSum(k-1, i+1, target - arr[i], arr, res, quad);
+				quad.remove(quad.size()-1);
+			}
+			return;
+		}
+		int l = start, r = arr.length-1;
+		while (l < r) {
+			long sum = (long) arr[l] + arr[r];
+			
+			if (sum < target) {
+				l++;
+			} else if (sum > target) {
+				r--;
+			} else {
+				List<Integer> temp = new ArrayList<>(quad);
+				temp.add(arr[l]);
+				temp.add(arr[r]);
+				
+				res.add(temp);
+				
+				l++;
+				while (l < r && arr[l] == arr[l-1]) {
+					l++;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr, int n, int target) {
 		long s = 0;
 		Arrays.sort(arr);

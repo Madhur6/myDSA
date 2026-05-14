@@ -27,6 +27,8 @@ public class linearSearch {
 		search(newArr, 8200);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void search(int[] arr, int target) {
 		int len = arr.length;
 		int idx = -1;

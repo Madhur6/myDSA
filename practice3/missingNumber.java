@@ -11,6 +11,8 @@ public class missingNumber {
 		find(arr);
 	}
 
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find2(int[] arr) {
 		int n = arr.length, s = 0;
 		for (int i = 0; i < n; i++) {
@@ -19,6 +21,8 @@ public class missingNumber {
 		System.out.println((n*(n+1)/2) - s);
 
 	}
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr) {
 		int n = arr.length, s = 0, s1 = 0;
 		for (int i = 0; i < n; i++) {

@@ -14,6 +14,8 @@ public class permutationEx {
 		System.out.println("Permutation's result is: " + res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int fact(int n) {
 		// 4 p 2 ---> 4 * 3 * 2 * 1 / 2 * 1 ---> 12
 		

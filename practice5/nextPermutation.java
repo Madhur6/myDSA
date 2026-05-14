@@ -61,6 +61,8 @@ public class nextPermutation {
 
 
 	
+	// time complexity : O(n! * n)💖
+	// space complexity: O(n)✨
 	public static void findPermute(int[] arr, int n, List<List<Integer>> myList, int start) {
 		if (start == n) {
 			List<Integer> res = new ArrayList<>();
@@ -78,6 +80,8 @@ public class nextPermutation {
 		}
 	}
 	
+	// time complexity : O(1)💖
+	// space complexity: O(1)✨
 	public static void swap(int[] arr, int i, int j) {
 		int temp = arr[i];
 		arr[i] = arr[j];
@@ -154,6 +158,8 @@ public class nextPermutation {
 	
 	//SOLUTION II ✨
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void findPermute2(int[] arr) {
 		int n = arr.length, leftSmallIdx = -1;
 		
@@ -182,6 +188,8 @@ public class nextPermutation {
 		
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void reverse(int[] arr, int l, int r) {
 		while (l < r) {
 			int temp = arr[l];

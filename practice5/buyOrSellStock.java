@@ -10,6 +10,8 @@ public class buyOrSellStock {
 		
 		find(arr, n);
 	}
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr, int n) {
 		int profit = 0, maxProfit = -1, l = 0, r = 1;
 		while (r < n) {

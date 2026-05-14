@@ -15,6 +15,8 @@ public class countDigit {
 		System.out.println("The result: " + res);	
 	}
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(1)✨
 	public static int countDigit(int x) {
 		if (x == 0) return 1;
 		if (x < 0) {
@@ -30,6 +32,8 @@ public class countDigit {
 	}
 	
 	
+	// time complexity : O(1)💖
+	// space complexity: O(1)✨
 	public static int countDigit2(int x) {
 		int z = (int) Math.log10(x)+1;
 		return z;

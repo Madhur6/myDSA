@@ -14,6 +14,8 @@ public class twoSum {
 		}
 		
 		@Override
+		// time complexity : O(1)💖
+		// space complexity: O(1)✨
 		public int compareTo(Pair other) {
 			return Integer.compare(this.val, other.val);
 		}
@@ -31,6 +33,8 @@ public class twoSum {
 		System.out.println(Arrays.toString(res));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int[] find2(int[] arr, int target) {
 		int n = arr.length;
 		
@@ -62,6 +66,8 @@ public class twoSum {
 	}
 
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int[] find(int[] arr, int n, int k) {
 		int[] res = new int[2];
 		for (int i = 0; i < n; i++) {

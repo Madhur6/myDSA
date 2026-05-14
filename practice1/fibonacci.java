@@ -38,6 +38,8 @@ public class fibonacci {
 //	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int fab2(int x) {
 		if (x == 0) {
 			return 0;
@@ -54,6 +56,8 @@ public class fibonacci {
 	
 
 	 
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int[] fab(int x) {
 		int[] res = new int[x+1];
 		
@@ -68,6 +72,8 @@ public class fibonacci {
 		return res;
 	}
 	
+	// time complexity : O(1)💖
+	// space complexity: O(1)✨
 	public static int checkFib(int x) {
 		if (x == 0) {
 			return 0;

@@ -12,10 +12,14 @@ public class misc {
 	String name;
 	int age;
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public misc() {
 		
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public misc(String n, int a) {
 		this.name = n;
 		this.age = a;
@@ -44,13 +48,19 @@ class vehicle{
 	boolean isInGoodCondition;
 	double range;
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public vehicle() {
 		
 	}
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public vehicle( boolean i, double r) {
 		this.isInGoodCondition = i;
 		this.range = r;
 	}
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public vehicle(String m, boolean i, double r) {
 		this.modelName = m;
 		this.isInGoodCondition = i;

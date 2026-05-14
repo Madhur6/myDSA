@@ -3,6 +3,8 @@ package practice3;
 import java.util.Arrays;
 import java.util.HashSet;
 
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 public class removeDuplicatesFromSortedArr {
 	public static void main(String[] args) {
 		int[] arr = {0,0,1,1,1,2,2,3,3,4};
@@ -13,6 +15,8 @@ public class removeDuplicatesFromSortedArr {
 		System.out.print(Arrays.toString(arr));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void remove2(int[] arr) {
 		int len = arr.length;
 		int x = 1;
@@ -26,6 +30,8 @@ public class removeDuplicatesFromSortedArr {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void remove(int[] arr) {
 		int len = arr.length;
 		

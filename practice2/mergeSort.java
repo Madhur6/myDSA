@@ -39,6 +39,8 @@ public class mergeSort {
 
 	}
 	
+	// time complexity : O(n log n)💖
+	// space complexity: O(log n)✨
 	public static void breaks(int[] arr, int l, int r) {
 		if (l < r) {
 			int m = (l+r)/2;
@@ -49,6 +51,8 @@ public class mergeSort {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void merges(int[] arr, int l, int m, int r) {
 		int i = l, j = m+1;
 		
@@ -85,6 +89,8 @@ public class mergeSort {
 	
 	
 	
+	// time complexity : O(n log n)💖
+	// space complexity: O(log n)✨
 	public static void merge(int[] arr, int l, int r) {
 		if (l < r) {
 			int m = (l+r)/2;
@@ -106,6 +112,8 @@ public class mergeSort {
 	
 	// temp = [2, 3, 10]
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr, int l, int m, int r) {
 		// i = 0, j = 2, r = 2, m = 1
 		int i = l, j = m+1;

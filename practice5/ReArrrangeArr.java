@@ -24,6 +24,8 @@ public class ReArrrangeArr {
 	//		arr[] = {1,2,-4,-5,3,4}, N = 6
 	//		Output:
 	//		1 -4 2 -5 3 4
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find3(int[] nums, int x) {
 		List<Integer> l1 = new ArrayList<>();
 		List<Integer> l2 = new ArrayList<>();
@@ -55,6 +57,8 @@ public class ReArrrangeArr {
 		System.out.println(Arrays.toString(res));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find2(int[] nums, int x) {
 		int n = nums.length, p = 0, q = 1;
 		int[] res = new int[n];
@@ -68,6 +72,8 @@ public class ReArrrangeArr {
 		System.out.println(Arrays.toString(res));
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] nums, int x) {
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();

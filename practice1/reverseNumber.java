@@ -33,6 +33,8 @@ public class reverseNumber {
 	}
 	
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(1)✨
 	public static int revNum2(int x) {
 		int res = 0;
 		
@@ -56,6 +58,8 @@ public class reverseNumber {
 		return isNeg ? -res: res;
 	}
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(log n)✨
 	public static int revNum(int x) {
 		boolean isNeg = false;
 		if (x < 0) {

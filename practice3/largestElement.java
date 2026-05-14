@@ -18,17 +18,23 @@ public class largestElement {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int find4(int[] arr) {
 		return Arrays.stream(arr).max().orElse(-1);
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find3(int[] arr, int n) {
 		Arrays.sort(arr);
 		System.out.println("Result: " + arr[n-1]);
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int findR(int[] arr, int n, int max) {
 		if (n < 0) return max;
 		
@@ -39,6 +45,8 @@ public class largestElement {
 		return findR(arr, n-1, max);
 	}	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[] arr, int n) {
 		int max = 0;
 		for (int i = 0; i < n; i++) {

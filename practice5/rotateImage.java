@@ -30,6 +30,8 @@ public class rotateImage {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void rotate(int[][] arr) {
 		int l = 0, r = arr.length-1;
 		int top = 0, bottom = 0, topLeft = 0;

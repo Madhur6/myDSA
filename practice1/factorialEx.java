@@ -17,6 +17,8 @@ public class factorialEx {
 		System.out.println("The factorial of " + x + " is: " + res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static int factRecurssive(int x) {
 		if (x == 1) {
 			return 1;
@@ -24,6 +26,8 @@ public class factorialEx {
 		return x*fact(x-1);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int fact(int x) {
 		int res = 1;
 		while (x > 0) {

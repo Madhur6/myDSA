@@ -15,6 +15,8 @@ public class secondLargest {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int findS(int[] arr, int n) {
 		int min = Integer.MAX_VALUE, secondMin = Integer.MAX_VALUE;
 		
@@ -31,6 +33,8 @@ public class secondLargest {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int find(int[] arr, int n) {
 		int max = -1, secondMax = -1;
 		

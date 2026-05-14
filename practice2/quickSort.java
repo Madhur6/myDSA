@@ -16,6 +16,8 @@ public class quickSort {
 		System.out.println("Array: " + arr);
 	}
 	
+	// time complexity : O(n log n)💖
+	// space complexity: O(log n)✨
 	public static void quickSort(List<Integer> arr, int s, int e) {
 		if (s < e) {
 			int p = Partition2(arr, s, e); // try either: Partition or Partition2
@@ -68,6 +70,8 @@ public class quickSort {
 	// Space Comp: O(logn) 😊 (Better than merge-sort)
 	// good pivot selection: median of 3 [n+1/2] / random pivot (Reduces the chances of worst-case)
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int Partition(List<Integer> arr, int s, int e) {
 		int pivot = arr.get(e);
 		int pIndex = s;
@@ -89,6 +93,8 @@ public class quickSort {
 		return pIndex;
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int Partition2(List<Integer> arr, int s, int e) {
 		int pivot = arr.get(s);
 		int pIndex = s;

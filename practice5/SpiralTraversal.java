@@ -17,6 +17,8 @@ public class SpiralTraversal {
 		
 	}
 	
+	// time complexity : O(n*m)💖
+	// space complexity: O(1)✨
 	public static List<Integer> traverse(int[][] arr) {
 		List<Integer> res = new ArrayList<>();
 		

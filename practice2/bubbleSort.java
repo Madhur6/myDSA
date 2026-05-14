@@ -35,6 +35,8 @@ public class bubbleSort {
 	
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sort(int[] arr) {
 		int len = arr.length;
 		

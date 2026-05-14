@@ -24,6 +24,8 @@ public class printUsingRecurssion {
 		printNTo1(n);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void print1ToN(int n) {
 		// base case
 		if (n < 1) return;
@@ -34,6 +36,8 @@ public class printUsingRecurssion {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void printNTo1(int n) {
 		if (n < 1) return;
 		System.out.print(n + " ");
@@ -41,6 +45,8 @@ public class printUsingRecurssion {
 	}
 	
 	
+	// time complexity : O(1)💖
+	// space complexity: O(1)✨
 	public static void printRecursive() {
 		System.out.println("Recurssion!");
 		printRecursive();

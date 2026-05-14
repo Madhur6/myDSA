@@ -13,6 +13,8 @@ public class isSorted {
 		System.out.println(res);
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean find3(int[] arr) {
 		int len = arr.length;
 		int c = 0;
@@ -34,6 +36,8 @@ public class isSorted {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean find1(int[] arr) {
 		int len = arr.length;
 		
@@ -45,6 +49,8 @@ public class isSorted {
 		return true;
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static boolean find2(int[] arr) {
 		int len = arr.length;
 		

@@ -18,6 +18,8 @@ public class recursiveBubble {
 		System.out.println("Result: " + Arrays.toString(arr));
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(n)✨
 	public static void rBubble(int[] arr, int n) {
 		if (n == 1) return;
 		
@@ -32,6 +34,8 @@ public class recursiveBubble {
 		rBubble(arr, n-1);
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void bubble(int arr[], int n) {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n-i-1; j++) {

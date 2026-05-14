@@ -18,6 +18,8 @@ public class GCD {
 		System.out.println("The result is: " + res);
 	}
 	
+	// time complexity : O(log(min(a,b)))💖
+	// space complexity: O(1)✨
 	public static int calGCD(int x, int y) {
 		while (y != 0) {
 			int temp = x % y;

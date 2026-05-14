@@ -8,15 +8,13 @@ import java.util.Map;
 
 // https://leetcode.com/problems/range-sum-query-immutable/
 
+
+// SubArray: A subarray is a contiguous non-empty sequence of elements within an array.
 public class LongestSubArraySum {
 	public static void main(String[] args) {
 		int[] arr = {10,5,2,7,1,9};
 		int n = arr.length, target = 15;
-		sum4(arr, n, target);
-		
-		
-		
-		
+		sum4(arr, n, target);	
 	}
 	// -1 -1 1
 	//  0  1 2
@@ -24,6 +22,8 @@ public class LongestSubArraySum {
 	//  j
 	//  s = -2
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void sum4(int[] arr, int n, int t) {
 
 		// Link: [https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1]
@@ -76,6 +76,8 @@ public class LongestSubArraySum {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(n)✨
 	public static void sum3(int[] arr, int n, int t) {
 		int i = 0, j = 0, s = arr[i], l = 0;
 		
@@ -99,6 +101,8 @@ public class LongestSubArraySum {
 		System.out.println(l);
 	}
 	
+	// time complexity : O(n^2)💖
+	// space complexity: O(1)✨
 	public static void sum2(int[] arr, int n, int t) {
 		Map<Integer, Integer> map = new HashMap<>();
 		
@@ -138,6 +142,8 @@ public class LongestSubArraySum {
 		System.out.println(len);
 	}
 	
+	// time complexity : O(n^3)💖
+	// space complexity: O(1)✨
 	public static void sum(int[] arr, int n, int t) {
 		int sum = 0, len = -1;
 		

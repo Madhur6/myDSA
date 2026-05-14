@@ -16,6 +16,8 @@ public class countPrimes {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static int solution(int n) {
 		// SIEVE OF ERATOSTHENES👀
 		if (n < 2) {

@@ -13,6 +13,8 @@ public class binarySearch {
 		System.out.println("Index: " + x);
 	}
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(1)✨
 	public static int sol(int[] arr, int target) {
 		int n = arr.length;
 		int l = 0, r = n-1;
@@ -34,6 +36,8 @@ public class binarySearch {
 		return -1;
 	}
 	
+	// time complexity : O(log n)💖
+	// space complexity: O(log n)✨
 	public static int r_sol(int[] arr, int l, int r, int target) {
 		if (l > r) {
 			return -1;

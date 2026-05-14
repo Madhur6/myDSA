@@ -12,6 +12,8 @@ public class setMtxZero {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find3(int[][] arr) {
 		// better space complexity
 		// [😁|              ] col
@@ -81,6 +83,8 @@ public class setMtxZero {
 	}
 	
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find2(int[][] arr) {
 		int n = arr.length, m = arr[0].length;
 		int[] row = new int[n];
@@ -110,6 +114,8 @@ public class setMtxZero {
 		System.out.println(Arrays.toString(x));}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void find(int[][] arr) {
 		int n = arr.length; // no of rows
 		
@@ -153,6 +159,8 @@ public class setMtxZero {
 		}
 	}
 	
+	// time complexity : O(m)💖
+	// space complexity: O(1)✨
 	public static void makeRowZero(int[][] arr, int n, int m, int x) {
 		for (int i = 0; i < m; i++) {
 			if (arr[x][i] != 0) {
@@ -161,6 +169,8 @@ public class setMtxZero {
 		}
 	}
 	
+	// time complexity : O(n)💖
+	// space complexity: O(1)✨
 	public static void makeColZero(int[][] arr, int n, int m, int x) {
 		for (int i = 0; i < n; i++) {
 			if (arr[i][x] != 0) {
