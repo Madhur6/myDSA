@@ -1,438 +1,76 @@
-----------------------------------------⭐⭐ ✨ INDEX ✨ ⭐⭐----------------------------------------
+# 🚀 Up&Code <Java DSA Practice>
 
-💡 CHAPTER I   : Time & Space Complexity ✔
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3Q2ZmtpczI5NnA4djljdjdsZ2lndzgxNW5hajZhajIweXJwb3BpMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mEhPCIDM2bTrl0XKTG/giphy.gif" width="260" alt="coding gif"/>
+</p>
 
-💡 CHAPTER II  : Properties of Asymptotic Notations ℹ️
+<p align="center">
+  <b>Java + DSA + Daily Practice 💪</b>
+</p>
 
-💡 CHAPTER III : Analysis🔎
+---
 
+## 📁 Folder Map
 
+```text
+src/
+├── practice1/  😄 Basics (math, recursion, palindrome, prime)
+├── practice2/  🔍 Search + Sort
+├── practice3/  🧠 Arrays core problems
+├── practice4/  🎯 2Sum / 3Sum / 4Sum + Kadane
+├── practice5/  🧩 Matrix + permutation + mixed
+```
 
+---
 
+## 🛠️ Run Code
 
+```bash
+javac -d bin src\practice1\*.java src\practice2\*.java src\practice3\*.java src\practice4\*.java src\practice5\*.java
+java -cp bin practice1.armstrongNum
+```
 
+---
 
+## 🧭 How to Solve Questions
 
+1. 👀 Understand problem
+2. 🐢 Write brute force
+3. ⏱️ Check time/space
+4. ⚡ Optimize
+5. ✅ Test edge cases
 
+---
 
+## 🎮 Mini Strategy
 
-----------------------------------------⭐⭐ ✨ INDEX ✨ ⭐⭐----------------------------------------
-				                      
-									  << LET'S START LEARNING 😊 >>
-									  
+- Start with `practice1` ➜ move step by step
+- Solve daily (2-4 questions) 🔥
+- Re-solve old questions after 1 week ♻️
+- Focus on patterns, not memorizing code 🧠
 
+---
 
+## 🌈👀
 
+<p align="center">
+	<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDY2NnEwc3R6OThja3BjcWlmZmk0ZnM3bzFiZW43NGJ0eGtuNWc5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orif5SYc597EZus5W/giphy.gif" width="220" alt="cat typing"/>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjA1dm9iN2JzN2E2Y3A2dHQ5OGQ2Ym80NjJiZzU5dDI0c2xjeTFxNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13HgwGsXF0aiGY/giphy.gif" width="220" alt="cat typing"/>
+  &nbsp;&nbsp;
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2JwN2NqOHB3b2Y4aXVtbW1ibXJrdTVoN2NqYmFpOHVzbG9sNGQ2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZVik7pBtu9dNS/giphy.gif" width="220" alt="matrix gif"/>
+</p>
 
+---
 
+## ✍️ Author
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20By-Madhur-111827?style=for-the-badge&logo=github&logoColor=white" alt="author badge"/>
+  <a href="https://upandcode.com" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Visit_My_Website-22C55E?style=for-the-badge" alt="website link"/>
+  </a>
+</p>
 
-
-
-
-----------------------------------------⭐⭐ CHAPTER I ⭐⭐----------------------------------------
-#1 Time & Space Complexity ✔
-
-👉 Time Complexity:
-	- This analysis studies how an algorithm's runtime grows as input size approaches infinity, ignoring constants & focusing on the dominant growth rate (Big O, Big omega, Big Theta). 
-
-	- Or, Measures how the execution time grows with input size (n)
-
-
-👉 Space Complexity:
-	- Measures how much memory an algorithm uses as input size increases.
-	- Input Space & Auxiliary Space (extra space used by algo.)
-
-
-
-
-_______________________________________________________________________________________
-
-💡: ⭐ ORDER ⭐
-		- 1 < logN < root-n(√n) < n < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < ----------- < n^n
-
-_______________________________________________________________________________________
-
-
-💡: ⭐ Big - OHHHHHHHHHHHHHHH ⭐
-
-	✨ Big-OH: (upper-bound)
-		- The function f(n) = O(g(n)), Iff there exist +ve constants (c & n0) such that f(n) <= C*g(n) for all n >= n0 [n-zero, A fixed starting point]
-
-		- Ex.
-			f(n) = 2n + 3
-			2n + 3 <= 10 * n;   n >= 1 ........ (1) true:)
-			f(n)	   C * g(n)
-
-			[Instead of 10*n, We can write 7*n or 100*n, As long as it is greater then 2n+3]
-
-			f(n) = O(n) ........ By (1)
-
-			🔷 Simple approach,
-				- Instead of coming up with value on R.H.S,
-
-				- 2n + 3 <= 2n + 3*n
-				- 2n + 3 <= 5*n,     So n >= 1 true:)
-				    f(n)    c*g(n)
-				
-				[So on R.H.S make every term of left as multiple of n]
-
-
-			🔷 Different Method,
-				- Make everything square on R.H.S,
-				- 2n+3 <= 2n^2 + 3n^2
-				- 2n+3 <= 5n^2, n >= 1 true:)
-				  f(n)    c*g(n)
-
-			🔷 So O()/order of, f(n) = 2n+3, Would be Θ(n) [This is my avg/tight/exact bound(theta)]
-				- Also, f(n) = O(n) / O(n^2) / O(2^n) are true
-				- But, f(n) = O(logn) is not true, Because the logn is on the lower bound
-
-				- When you write Big-OH, Try to write the closest function, But if you write any other higher fn, That is also true...
-
-			🔷 If we look at the order:
-
-				- 1 < logN < root-n(√n) < ⭐ n ⭐ < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < ----------- < n^n
-				  Lower-bound          <--- [Θ] ---> Upper-bound
-				  (including n)					     (including n)
-	
-
-
-_______________________________________________________________________________________
-
-💡: ⭐ Big - Ω ⭐
-	✨ Big-Omega: (lower-bound)
-		- The function f(n) = Ω(g(n)), Iff there exist +ve constants (c & n0) such that f(n) >= C*g(n) for all n >= n0
-
-		- Ex.
-			f(n) = 2n+3
-			2n + 3 >= 1*n;       for all n >= 1 [we only write 1*n, We can't write similar to upper-bound] true:)
-			f(n)	  C * g(n)
-
-			- 2n + 3 >= 1 * logN; for all n >= 1 true:) -> f(n) = Ω(logn)
-
-			🔷 If we look at the order:
-
-				- 1 < logN < root-n(√n) < ⭐ n ⭐ < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < ----------- < n^n
-				  Lower-bound          <--- [Θ] ---> Upper-bound
-				  (including n)					     (including n)
-
-			🔷 So all the values, After the avg bound is out of our scope..
-			🔷 Although the useful one is still f(n) = O(n) true:)
-
-_______________________________________________________________________________________
-
-
-💡: ⭐ Big - Θ ⭐
-	✨ Big-Theta: (Average/Tight-bound)
-		- The function f(n) = Θ(g(n)), Iff there exist +ve constants (c1, c2 & n0) such that [c1*g(n) <= f(n) <= c2*g(n)]
-
-		- Ex.
-			f(n) = 2n+3
-			- 1 * n   <= 2*n + 3   <=   5*n
-			  c1*g(n)       f(n)        c2*g(n)
-	
-			- f(n) = Θ(n) [Here i can't use ❌ f(n) = Θ(n^2), Only f(n) = Θ(n) is allowed]
-
-
-			🔷 If we look at the order:
-
-				- 1 < logN < root-n(√n) < ⭐ n ⭐ < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < ----------- < n^n
-				  Lower-bound          <--- [Θ] ---> Upper-bound
-				  (including n)					     (including n)
-
-
-_______________________________________________________________________________________
-
-
-💡: ⭐ Examples ⭐
-	✨ 1. f(n) = 2n^2 + 3n + 4
-
-		- ✨ Big-OH: (upper-bound):
-			- 2n^2 + 3n + 4 <= 2n^2 + 3n^2 + 4n^2
-			- 2n^2 + 3n + 4 <= 9 n^2;    n >= 1 true:)
-			  		f(n)       C*g(n)
-			- f(n) = O(n^2)
-
-		- ✨ Big-Omega: (lower-bound):
-			- 2n^2 + 3n + 4 >= 1 * n^2
-			  		f(n)       C*g(n)
-			- f(n) = Ω(n^2)
-
-		- ✨ Big-Theta: (Average/Tight-bound):
-			- 1*n^2 <= 2n^2 + 3n + 4 <= 9*n^2
-			- c1*g(n)       f(n)        c2*g(n)
-			- f(n) = Θ(n^2)
-
-
-
-	✨ 2. f(n) = n^2logn + n
-
-		🔷 If we look at the order:
-			- 1 < logN < root-n(√n) < ⭐ n ⭐ < nLogn < n^2 < < ⭐ n^2logn ⭐ < n^3 < ----------- < 2^n < 3^n < ----------- < n^n
-
-		- ✨ Big-OH: (upper-bound):
-			- n^2logn + n <=  10 * n^2logn
-			  		f(n)       C*g(n)
-			- f(n) = O(n^2logn)
-
-		- ✨ Big-Omega: (lower-bound):
-			- n^2logn + n  >=  1 * n^2logn
-			  		f(n)       C*g(n)
-			- f(n) = Ω(n^2logn)
-
-		- ✨ Big-Theta: (Average/Tight-bound):
-			- 1*(n^2logn) <= (n^2logn) <= 10*(n^2logn)
-			- c1*g(n)         f(n)        c2*g(n)
-			- f(n) = Θ(n^2logn)
-
-
-	
-	✨ 3. f(n) = n!
-
-		🔷 [n * (n-1)....3*2*1 ------------ Reverse of which is ------------ 1*2*3....n*(n-1)]
-
-		🔷 If we look at the order:
-			- 1 < logN < root-n(√n) < n < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < -----------< ⭐ n! ⭐ < n^n
-
-		🔷 Lower-Bound	   |		Average-Bound	|		Upper-Bound
-
-		1x1x1x1x1x....x1    |   1X2x3x4x....xn       |  nxnxnxn...xn
-			1               <=      n!               <=      n^n
-								undefined?
-
-		🔷 
-			- n! grows faster than any polynomial (n^k), all constant-base exponentials (2ⁿ, 3ⁿ)
-		  	- n! grows slower than nⁿ
-
-
-		🔷 We can't conclude, n^10 < n! < n^11 (fixed polynomials bounds are not tight), So now upper-lower-bounds are useful
-
-		🔷 But we can find theta: n! = Θ(√n * (n/e)^n) [Stirling Approximation]
-
-		🔷 Stirling Approximation:
-			- A formula that estimates factorial for large n: 
-				- n! ~ √2pin*(n/e)^n
-				- OR n! = Θ(√n * (n/e)^n)
-
-
-
-
-	✨ 4. f(n) = logn!
-		f(n) = logn!
-			- log * (n * (n-1)....3*2*1) ------------ Reverse of which is ------------ 1*2*3....n*(n-1)
-
-		🔷 If we look at the order:
-			- 1 < logN < root-n(√n) < n < nLogn < n^2 < n^3 < ----------- < 2^n < 3^n < -----------< n! < n^n
-
-		🔷 Lower-Bound		|		Average-Bound		|		Upper-Bound
-
-		log*(1x1x1x1x1x....x1)    |   log*(1X2x3x4x....xn)    |  log*(nxnxnxn...xn)
-			log1 ~ 0           <=          logn!            <=      logn^n ~ nlogn
-	      [we will use Ω(1)]			 undefined?				    O(nlogn)
-
-		🔷 Tight-bound exists for this too: log(n!) = Θ(nlogn)
-			- Reason: log(n!) = log1 + log2 + log3 + ... + logn
-			- & By Stirling it behaves like nLogn - n + O (logn)
-
-			- Let n = 8, log2(8!) = log2(40320) ~ 15.3
-			- n log2 n = 8*3 = 24
-			- 15.3 & 24 are not equal but they grow in the same pattern as 'n' increases, That's why 'Theta' is Θ(nlogn).
-
-
-_______________________________________________________________________________________
-
-
-
---------------------------------------⭐⭐ CHAPTER I ENDS ⭐⭐----------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-----------------------------------------⭐⭐ CHAPTER II ⭐⭐----------------------------------------
-#2 Properties of Asymptotic Notations ℹ️
-
-👉 General Properties:
-	- If f(n) is O(g(n)), Then a * f(n) is O(g(n))
-
-	- Ex. f(n) = 2n^2 + 5 is O(n^2)
-		- Then 7*f(n) = 7 * (2n^2 + 5) = [ 14 n^2 + 35 ] is O(n^2)
-		- This is true for Ω(n^2) and Θ(n^2) also
-
-
-👉 Reflexive:
-	- Every function is asumptotically related to itself
-	- f(n) = O(f(n)), f(n) = Ω(f(n)), f(n) = Θ(f(n))
-
-	- Ex. f(n) = n^2
-		- n^2 = O(n^2)
-		- n^2 = Ω(n^2)
-		- n^2 = Θ(n^2)
-
-
-👉 Transitive:
-	- If f(n) is O(g(n)) & g(n) is O(h(n)), Then f(n) is O(h(n))
-	- [When g(n) is an upper-bound for f(n) & h(n) is an upper-bound for g(n), Then h(n) is an upper-bound for f(n)]
-	
-	- Ex. f(n) = n     &        g(n) = n^2     &       h(n) = n^3
-		- n is O(n^2) & n^2 is O(n^3)
-		
-
-👉 Symmetric:
-	- [Only for theta() notation]
-	- if f(n) is theta(g(n)) then g(n) is theta(f(n))
-	
-	- Ex. f(n) = n^2
-		- g(n) = n^2
-		- f(n) = Θ(n^2)
-		- g(n) = Θ(n^2)
-		- When both the functions are same, Then they are "SYMMETRIC", - Both of them are theta of each other
-
-
-👉 Transpose:
-	- [Only for O() & Ω() notation]
-	- if f(n) = O(g(n)) then g(n) is Ω(f(n))
-	- If f(n) = Ω(g(n)), then g(n) = O(f(n))
-	
-	- Ex. f(n) = n
-		- g(n) = n^2
-		- Then n is O(n^2) & n^2 is Ω(n)
-		- [Upper-bound relation in one-direction becomes lower-bound in the reverse direction]
-
-	- Ex. if f(n) = O(g(n)) & f(n) = Ω(g(n))
-		- g(n) <= f(n) <= g(n) [Same g(n) on both sides]
-		- Then f(n) = Θ(g(n))✨
-
-
-_______________________________________________________________________________________
-
-
-💡: ⭐ Examples ⭐
-👉 Example 1:
-	- If f(n) is O(g(n)) & d(n) = O(e(n)) then f(n) + d(n) = ?
-
-	Solution:
-		- Let f(n) = n = O(n)
-		- Let d(n) = n^2 = O(n^2)
-		- Then f(n) + d(n) ----> n + n^2 = O(n^2)
-		- If f(n) was taken as n^2, Then that would've become the answer...
-		- Thus, I can say, f(n) + d(n) = O(max(g(n), e(n)))
-
-
-
-👉 Example 2:
-	- If f(n) = O(g(n)) & d(n) = O(e(n)) then f(n) * d(n) = ?
-
-	Solution:
-		- So product of g(n) & e(n) ---> O(g(n)*e(n))
-
-
-_______________________________________________________________________________________
-
-
-
---------------------------------------⭐⭐ CHAPTER II ENDS ⭐⭐----------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-----------------------------------------⭐⭐ CHAPTER III ⭐⭐----------------------------------------
-#3 Analysis🔎
-
-
-👉 PSEUDO CODE:
-	- Algorithm Swap(a, b)
-
-	{
-		temp = a; ...1
-		a =    b; ...2
-		b = temp; ...3
-		______________
-			f(n): 3
-
-		
-
-		s = 0,                      ...1
-					1	 n+1	n
-		for (int i = 0; i < n; i++) ...n+1
-		{
-			s = s + a[i];			...n
-		}
-		return s;					...1
-		___________________________________
-					f(n):2n+3
-
-
-		
-		s = 0,                      	...1
-					1	 n+1	n					// Why (i<n) is n+1? i = 0 / 1 / 2 / 3 / 4 / 5 ❌ (condition is checked 6 times, So n+1)
-		for (int i = 0; i < n; i++) 	...n+1  	// for-loop runs for (n+1) times, & Everything inside for-loop runs for n-times
-		{
-			for (int j = 0; j < i; j++) ...n*(n+1)  // n here, Is representing the above point & n+1 is for the for-loop
-			{
-				c[i,j] = a[i,j] + b[i,j];..n*n     // one n is from outer loop's & other one is from nested loop's, Becoz everything inside a for-loop runs for n-times
-			}
-		}
-		return s;				     	...1
-		___________________________________
-				f(n):2n^2 + 2n + 1      ...O(n^2)
-
-		Space: variables ---> a, b, c   ...n*n (Because in a matrix, There're 2 cols)
-							  n  i  j   ...1,1,1
-						________________________
-						s(n) = 3n^2 + 3 ...O(n^2)
-
-
-
-
-		s = 0,                        ...1
-					1	 n+1	n
-		for (int i = 0; i < n; i=i*2) ...i = 1 * 2 * 2 * 2 * 2 = n --> [i = 2^k = n --> k = logn(base2)]
-
-		{
-			s = s + a[i];		   	  ...n
-		}
-		return s;					  ...1
-		___________________________________
-					f(n):2n+3
-
-
-		
-		i = 0,                      ...1
-		while (i < n) 				...n+1
-		{
-			// logic				...n
-			i++;					...n
-		}
-		___________________________________
-					f(n):3n+2
-
-
-
-		do {
-		
-		} while (condition) // post-tested loop [If condition is false, It'll still run atleast for 1 time]
-		___________________________________
-					f(n):
-
-
-	}
-
-
-
-
---------------------------------------⭐⭐ CHAPTER III ENDS ⭐⭐----------------------------------------
+<p align="center">
+  Code. Learn. Repeat. ⚡
+</p>
