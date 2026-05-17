@@ -60,7 +60,6 @@ public class SpiralTraversal {
 				}
 				l+=1;
 			}
-			break;
 		}
 		return res;
 	}
