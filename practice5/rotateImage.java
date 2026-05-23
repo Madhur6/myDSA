@@ -2,6 +2,7 @@ package practice5;
 
 import java.util.Arrays;
 
+
 // https://leetcode.com/problems/rotate-image/submissions/1783023735/
 
 
@@ -33,12 +34,9 @@ public class rotateImage {
 	// time complexity : O(n)💖
 	// space complexity: O(1)✨
 	public static void rotate(int[][] arr) {
-		int l = 0, r = arr.length-1;
-		int top = 0, bottom = 0, topLeft = 0;
+		int l = 0, r = arr.length-1, top = 0, bottom = arr.length-1, topLeft = 0;
+		
 		while (l < r) {
-			// Square Mtx, So works
-			top = l;
-			bottom = r;
 			for (int i = 0; i < (r-l); i++) {
 				
 				// save topLeft
@@ -56,8 +54,8 @@ public class rotateImage {
 				// move topLeft into topRight
 				arr[top+i][r] = topLeft;
 			}
-			l+=1;
-			r-=1;
+			l+=1;top+=1;
+			r-=1;bottom+=1;
 		}
 	}
 }

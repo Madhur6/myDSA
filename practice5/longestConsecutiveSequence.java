@@ -4,6 +4,19 @@ import java.util.Arrays;
 
 //https://neetcode.io/problems/longest-consecutive-sequence
 //https://www.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1
+
+
+
+// SubSequence->
+// You can:
+// keep elements 🧺
+// skip elements 🦘
+// But you cannot change the order.❌
+
+// Ex. ABCDEF -> Possible subsequences: ACE / ADF / ABF / ABCDEF / A
+
+
+
 public class longestConsecutiveSequence {
 	public static void main(String[] args) {
 		int[] arr = {2,20,4,10,3,4,5};
@@ -19,14 +32,12 @@ public class longestConsecutiveSequence {
 		for (int i = 1; i < n; i++) {
 			if (arr[i] == arr[i-1]+1) {
 				length++;
-				max = Math.max(max, length);
 			} else if (arr[i] == arr[i-1]) {
-				max = Math.max(max, length);
 				continue;
 			} else {
 				length=1;
-				max = Math.max(max, length);
 			}
+			max = Math.max(max, length);
 		}
 		System.out.println(max);
 	}

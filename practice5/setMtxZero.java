@@ -52,7 +52,7 @@ public class setMtxZero {
 			}
 		}
 		
-		for (int i = 1; i <n; i++) {
+		for (int i = 1; i < n; i++) {
 			for (int j = 1; j < m; j++) {
 				if (arr[i][j] != 0) {
 					// check for col & row
