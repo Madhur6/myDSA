@@ -8,31 +8,57 @@ public class patternsEx {
 		System.out.print("Enter x: ");
 		int n = sc.nextInt();
 		
-//		marioBox(n); // BOX 📦
+		marioBox(n); // BOX 📦
 		
-//		marioTriangle(n); // TRIANGLE 📐
+		System.out.println("         ");
 		
-//		marioTriangle2(n); // TRIANGLE 2 📐
+		marioTriangle(n); // TRIANGLE 📐
 		
-//		marioTriangle3(n); // TRIANGLE 3 📐
+		System.out.println("         ");
 		
-//		marioTriangle4(n); // TRIANGLE 4 📐
+		marioTriangle2(n); // TRIANGLE 2 📐
 		
-//		marioTriangle5(n); // TRIANGLE 5 📐
+		System.out.println("         ");
 		
-//		marioTriangle6(n); // TRIANGLE 6 📐
+		marioTriangle3(n); // TRIANGLE 3 📐
 		
-//		numberTriangle(n); // TRIANGLE 7 📐
+		System.out.println("         ");
 		
-//		numberTriangle2(n); // TRIANGLE 8 📐
+		marioTriangle4(n); // TRIANGLE 4 📐
 		
-//		pascalTriangle(n); // TRIANGLE 9 📐 |	LeetCode: [https://leetcode.com/problems/pascals-triangle/description/]
+		System.out.println("         ");
 		
-//		diamond(n); // DIAMOND 1 🔶 
+		marioTriangle5(n); // TRIANGLE 5 📐
 		
-//		plus(n); // plus ➕
+		System.out.println("         ");
 		
-//		star(n); // star 🌟
+		marioTriangle6(n); // TRIANGLE 6 📐
+		
+		System.out.println("         ");
+		
+		numberTriangle(n); // TRIANGLE 7 📐
+		
+		System.out.println("         ");
+		
+		numberTriangle2(n); // TRIANGLE 8 📐
+		
+		System.out.println("         ");
+		
+		pascalTriangle(n); // TRIANGLE 9 📐 |	LeetCode: [https://leetcode.com/problems/pascals-triangle/description/]
+		
+		System.out.println("         ");
+		
+		diamond(n); // DIAMOND 1 🔶
+		
+		System.out.println("         ");
+		
+		plus(n); // plus ➕
+		
+		System.out.println("         ");
+		
+		star(n); // star 🌟
+		
+		System.out.println("         ");
 		
 		diamond2(n); // DIAMOND 2 🔶 
 	}
